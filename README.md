@@ -25,20 +25,19 @@ Dependências
 
 Como Executar
 
-    Clone este repositório.
-    Crie e ative um ambiente virtual:
-'''
-python -m venv venv
+* Clone este repositório.
+* Crie e ative um ambiente virtual:
 
-source venv/bin/activate (Linux/Mac) ou venv\Scripts\activate (Windows)
-'''
+    python -m venv venv
 
-Instale as dependências:
-'''
-pip install -r requirements.txt
-'''
-Execute o aplicativo Flask:
+    source venv/bin/activate (Linux/Mac) ou venv\Scripts\activate (Windows)
 
-'''
-flask run
-'''
+
+* Instale as dependências:
+
+    pip install -r requirements.txt
+
+* Execute o aplicativo Flask:
+
+    flask run
+
