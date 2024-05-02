@@ -1,12 +1,12 @@
 # Um site que vende perfumes tem como principais objetivos:
 
-    Oferecer uma Ampla Variedade de Produtos: Um site de perfumes deve oferecer uma ampla gama de fragrâncias para atender às preferências de diferentes clientes.
+Oferecer uma Ampla Variedade de Produtos: Um site de perfumes deve oferecer uma ampla gama de fragrâncias para atender às preferências de diferentes clientes.
 
-    Facilitar a Compra: O processo de compra deve ser simples e intuitivo, com opções claras de pagamento e entrega.
+Facilitar a Compra: O processo de compra deve ser simples e intuitivo, com opções claras de pagamento e entrega.
 
-    Proporcionar Informações Detalhadas sobre os Produtos: Os clientes devem ter acesso a informações detalhadas sobre cada perfume, incluindo notas de fragrância, tamanhos disponíveis, preços e avaliações de outros clientes.
+Proporcionar Informações Detalhadas sobre os Produtos: Os clientes devem ter acesso a informações detalhadas sobre cada perfume, incluindo notas de fragrância, tamanhos disponíveis, preços e avaliações de outros clientes.
 
-    Construir uma Comunidade de Clientes Fidelizados: O site pode oferecer recursos para interação entre os clientes, como avaliações e comentários, para construir uma comunidade em torno da marca.
+Construir uma Comunidade de Clientes Fidelizados: O site pode oferecer recursos para interação entre os clientes, como avaliações e comentários, para construir uma comunidade em torno da marca.
 
 # Estrutura do Projeto Flask
 
@@ -23,21 +23,21 @@ Dependências
     Flask
     gspread
 
-Como Executar
+## Como Executar
 
-* Clone este repositório.
-* Crie e ative um ambiente virtual:
+Clone este repositório.
+Crie e ative um ambiente virtual:
 
     python -m venv venv
 
     source venv/bin/activate (Linux/Mac) ou venv\Scripts\activate (Windows)
 
 
-* Instale as dependências:
+Instale as dependências:
 
     pip install -r requirements.txt
 
-* Execute o aplicativo Flask:
+Execute o aplicativo Flask:
 
     flask run
 
