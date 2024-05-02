@@ -1,0 +1,42 @@
+/* General Variables */
+:root {
+    --branco-pampa: #f6f9f9;
+    --gold: #dbc07c;
+    --primario-flush: #bb1d3e;
+    --secundario-cranberry: #de5774;
+    --vinho-escuro: #342729;
+
+    --fonte-titulo: "Cormorant SC", serif;
+
+}
+
+/* Navigation Bar */
+
+#nav-bar {
+    background-color: var(--branco-pampa);
+}
+
+.navbar-brand img {
+    max-width: max-content;
+}
+
+#cart {
+    width: 3rem;
+}
+
+.nav-item a {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+#nav-bar li{
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    color: var(--vinho-escuro);
+    font-size: 1.35rem;
+}
+
+#nav-bar li:hover {
+    color: var(--primario-flush);
+    text-decoration: underline;
+}
