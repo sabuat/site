@@ -45,20 +45,45 @@
     <main>
         {% block component %}{% endblock %}
     </main>
-    <footer>
-        <div class="row">
-            <div class="container-fluid">
-                <div class="col">
-
+    <footer id="footer">
+        <div class="row pt-2 py-5">
+            <div class="col-3">
+                <div class="row">
+                    <div class="d-flex pt-5 px-5">
+                        <a href="" class="link-bar col">Home</a>
+                        <a href="" class="link-bar col">Loja</a>
+                        <a href="" class="link-bar col">Sobre</a>
+                        <a href="" class="link-bar col">Blog</a>
+                        <a href="" class="link-bar col">Contato</a>
+                    </div>
                 </div>
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>Este site é um produto de <em>Araguaney Digital</em></p>
+                <div class="row pt-4 px-5">
+                        <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/facebook.svg" alt="facebook logo"></a>
+                        <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/instagram.svg" alt="instagram logo"></a>
+                        <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/tiktok.svg" alt="tiktok logo"></a>
+                        <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/whatsapp.svg" alt="whatsapp logo"></a>
+                </div>
+                <div class="row pt-3 px-5">
+                    <p><em>#auroraperfumes</em></p>
                 </div>
             </div>
+            <div class="col-2"></div>
+            <div class="col-2">
+                <div class="row pt-5">
+                    <a href="{{ url_for ('home')}}"><img class="logo-footer img-fluid" src="../static/logo-aurora-dorado.svg" alt="logo"></a>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3">
+                <div class="row p-5"></div>
+                <div class="row pt-2 px-5">auroraperfumes@gmail.com</div>
+                <div class="row pt-2 px-5">(+55)11 98765 4321</div>
+            </div>
+        </div>    
+        <div id="footer-prod" class="row">
+            <div class="col">
+                <p>© Este site é um produto de <em>Araguaney Digital.</em>2024</p>
+             </div>
         </div>
     </footer>
 </body>
