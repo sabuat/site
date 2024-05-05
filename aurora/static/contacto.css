@@ -1,0 +1,6 @@
+@import "styles.css";
+
+#contact-form {
+    background-color: var(--branco-fundo);
+    padding: 5rem;
+}

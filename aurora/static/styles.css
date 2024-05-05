@@ -1,10 +1,11 @@
 /* General Variables */
 :root {
-    --branco-pampa: #f6f9f9;
+    --branco-pampa: rgb(246, 249, 249);
     --gold: #dbc07c;
     --primario-flush: #bb1d3e;
     --secundario-cranberry: #de5774;
     --vinho-escuro: #342729;
+    --branco-fundo: rgb(246, 249, 249, 0.65);
 
     --fonte-titulo: "Cormorant SC", serif;
 
@@ -71,4 +72,20 @@
     text-align: center;
     padding-left: .75rem;
     padding-right: .75rem;
+}
+
+/* Parallax */
+
+.parallax {
+    /* The image used */
+    background-image: url("../static/fundo-aurora-1.jpg");
+
+    width: 100%;
+    
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
