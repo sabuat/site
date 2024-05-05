@@ -8,6 +8,7 @@
     --branco-fundo: rgb(246, 249, 249, 0.65);
 
     --fonte-titulo: "Cormorant SC", serif;
+    --fonte-paragrafo: "Marcellus", sans-serif;
 
 }
 
@@ -15,6 +16,10 @@
 
 #nav-bar {
     background-color: var(--branco-pampa);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .navbar-brand img {
