@@ -38,3 +38,7 @@
 .invert {
     transform: scaleX(-1);
 }
+
+#carouselExample {
+    color: black;
+}
