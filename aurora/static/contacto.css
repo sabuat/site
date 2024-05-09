@@ -4,3 +4,15 @@
     background-color: var(--branco-fundo);
     padding: 5rem;
 }
+
+#im-about-1, #im-about-2 {
+    padding: .5rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--vinho-escuro);
+    background-color: var(--branco-fundo);
+}
+
+#link {
+    color: var(--secundario-cranberry);
+    text-decoration: none;
+}

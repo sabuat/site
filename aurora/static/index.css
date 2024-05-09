@@ -1,0 +1,44 @@
+@import "styles.css";
+
+#banner-1 {
+    background-color: var(--secundario-cranberry);
+    max-height: 42rem;
+    padding: 5rem;
+    margin-bottom: 2rem;
+}
+
+.tit-ban-1 {
+    font-size: 475%;
+    color: var(--branco-pampa);
+    font-family: var(--fonte-titulo);
+    align-items: center;
+}
+
+.p-ban-1 {
+    padding: auto;
+    color: var(--branco-pampa);
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    
+}
+
+#bt-gr {
+    background-color: var(--primario-flush);
+    color: var(--branco-pampa);
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+    width: auto;
+    font-size: 1.2rem;
+    padding: .125rem, .5rem;
+    border: 1px solid var(--branco-pampa);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.invert {
+    transform: scaleX(-1);
+}
+
+#carouselExample {
+    color: black;
+}
