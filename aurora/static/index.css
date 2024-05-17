@@ -2,7 +2,6 @@
 
 #banner-1 {
     background-color: var(--secundario-cranberry);
-    max-height: 42rem;
     padding: 5rem;
     margin-bottom: 2rem;
 }
@@ -41,4 +40,23 @@
 
 #carouselExample {
     color: black;
+}
+
+@media screen and (max-width: 768px){
+    #banner-1 {
+        margin-top: 7rem;
+        padding: 0;
+        padding-left: 1rem;
+        font-size: 75%;
+    }
+
+    #img-1 img{
+        width: 95%;
+    }
+
+    #img-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
