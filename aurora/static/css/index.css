@@ -82,6 +82,7 @@
     background-color: var(--primario-flush);
     margin: 2vw 12vw;
     padding: 2vw;
+    min-height: 30vw;
 }
 
 .tit-box {
