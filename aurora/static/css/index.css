@@ -18,8 +18,7 @@
     color: var(--branco-pampa);
     font-family: var(--fonte-paragrafo);
     font-size: 1.5rem;
-    padding: 1.5rem;
-    
+    padding: 1.5rem;   
 }
 
 #bt-gr {
@@ -38,8 +37,16 @@
     transform: scaleX(-1);
 }
 
-#carouselExample {
-    color: black;
+#banner-2 {
+    background-color: var(--branco-pampa);
+    text-align: center;
+}
+
+.tit-ban-2 {
+    font-size: 475%;
+    color: var(--vinho-escuro);
+    font-family: var(--fonte-titulo);
+    align-items: center;
 }
 
 @media screen and (max-width: 768px){
@@ -59,4 +66,51 @@
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Carrousel */
+
+.box-test {
+    background-color: var(--branco-pampa);
+}
+
+.prof-img {
+    border-radius: 50%;
+}
+
+#card-test {
+    background-color: var(--primario-flush);
+    margin: 2vw 12vw;
+    padding: 2vw;
+}
+
+.tit-box {
+    font-size: 4rem;
+    color: var(--vinho-escuro);
+    font-family: var(--fonte-titulo);
+    align-items: center;
+}
+
+.tit-ban-2 {
+    font-size: 3rem;
+    color: var(--branco-pampa);
+    font-family: var(--fonte-titulo);
+}
+
+.p-ban-2 {
+    padding: auto;
+    color: var(--branco-pampa);
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.2rem;
+    padding: .5rem;
+    font-weight: 300;  
+}
+
+.link {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+#card-test a:hover {
+    color: var(--branco-pampa);
 }

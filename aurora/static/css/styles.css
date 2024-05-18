@@ -78,6 +78,7 @@
     text-align: center;
     padding-left: .75rem;
     padding-right: .75rem;
+    max-width: 12vw;
 }
 
 /* Parallax */
