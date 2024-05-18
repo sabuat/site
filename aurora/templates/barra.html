@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +17,10 @@
 <body>
     <header>
         <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">   
+            <div class="container col-6 col-lg-4 justify-content-start">   
                 <a class="navbar-brand" href="{{ url_for ('home')}}" > <img src="../static/logo-barra.png"> </a>
             </div>
-            <div class="collapse navbar-collapse" id="link-bar">
+            <div class="collapse navbar-collapse col-4 justify-content-around" id="link-bar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
@@ -39,7 +39,7 @@
                     </li>
                 </ul>
             </div>
-            <a class="container-fluid justify-content-end">
+            <a class="container col-6 col-lg-4 justify-content-end">
                 <img id="cart" src="../static/cart.png" alt="">
             </a>       
         </nav>
@@ -50,42 +50,44 @@
         </div>
     </main>
     <footer id="footer">
-        <div class="row pt-2 py-5">
-            <div class="col-3">
-                <div class="row">
-                    <div class="d-flex pt-5 px-5">
-                        <a href="/" class="link-bar col">Home</a>
-                        <a href="/loja" class="link-bar col">Loja</a>
-                        <a href="/sobre" class="link-bar col">Sobre</a>
-                        <a href="blog" class="link-bar col">Blog</a>
-                        <a href="/contato" class="link-bar col">Contato</a>
+        <div class="container-fluid">
+            <div class="row pt-2 py-5 text-center align-items-center">
+                <!-- Links -->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="d-flex pt-5 justify-content-between">
+                            <a href="/" class="link-bar col px-1">Home</a>
+                            <a href="/loja" class="link-bar col px-1">Loja</a>
+                            <a href="/sobre" class="link-bar col px-1">Sobre</a>
+                            <a href="blog" class="link-bar col px-1">Blog</a>
+                            <a href="/contato" class="link-bar col px-1">Contato</a>
+                        </div>
+                    </div>
+                    <div class="row pt-4 ">
+                            <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/facebook.svg" alt="facebook logo"></a>
+                            <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/instagram.svg" alt="instagram logo"></a>
+                            <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/tiktok.svg" alt="tiktok logo"></a>
+                            <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/whatsapp.svg" alt="whatsapp logo"></a>
+                    </div>
+                    <div class="row pt-3 px-5">
+                        <p><em>#auroraperfumes</em></p>
                     </div>
                 </div>
-                <div class="row pt-4 px-5">
-                        <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/facebook.svg" alt="facebook logo"></a>
-                        <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/instagram.svg" alt="instagram logo"></a>
-                        <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/tiktok.svg" alt="tiktok logo"></a>
-                        <a href="" class="col"><img class="icon" style="max-width: 2.75rem;" src="../static/logos/whatsapp.svg" alt="whatsapp logo"></a>
+                <!-- Logotipo-->
+                <div class="col-md-4">
+                    <div class="row pt-5">
+                        <a href="{{ url_for ('home')}}"><img class="logo-footer img-fluid" src="../static/logo-aurora-dorado.svg" alt="logo"></a>
+                    </div>
                 </div>
-                <div class="row pt-3 px-5">
-                    <p><em>#auroraperfumes</em></p>
+                <!-- Area de contato-->
+                <div class="pt-5 col-md-4">
+                    <div class=" pt-2 px-5">auroraperfumes@gmail.com</div>
+                    <div class=" pt-2 px-5">(+55)11 98765 4321</div>
                 </div>
-            </div>
-            <div class="col-2"></div>
-            <div class="col-2">
-                <div class="row pt-5">
-                    <a href="{{ url_for ('home')}}"><img class="logo-footer img-fluid" src="../static/logo-aurora-dorado.svg" alt="logo"></a>
-                </div>
-            </div>
-            <div class="col-2"></div>
-            <div class="col-3">
-                <div class="row p-5"></div>
-                <div class="row pt-2 px-5">aurora.perfumaria.sp@gmail.com</div>
-                <div class="row pt-2 px-5">(+55)11 98765 4321</div>
             </div>
         </div>    
-        <div id="footer-prod" class="row">
-            <div class="col">
+        <div id="footer-prod" class="container-fluid">
+            <div class="row">
                 <p>© Este site é um produto de <em>Araguaney Digital.</em>2024</p>
              </div>
         </div>
