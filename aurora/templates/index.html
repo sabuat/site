@@ -29,9 +29,29 @@
       </div>
     </div>
   </div>
+
   <!-- Melores Vendidos -->
 
+  <div class="container-fluid text-center mb-2">
+    <h1 class="tit-box-2 my-2 text-center">Mais Vendidos</h1><br>
+    {% for id, produto in fontes[0].items() %}
+      <div class="col d-inline-flex mt-3">
+        <div class="card my-3 mx-3" style="width: 20vw;">
+          <div>
+            <img src="{{ produto['imagem'] }}" class="col-3 my-2 w-75" style="max-height: 20rem; ">
+          </div>
+          <div id="card-text" class="card-body" style="height: 20vw; ">
+            <h4 class="card-title mb-2">{{ produto['nome'] }}</h4>
+            <p class="card-text pt-2" style="height: 12vw; ">{{ produto['descricao'] }}</p>
+            <a id="bt-gr" href="" class="btn ">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
   <!-- Testimonios -->
+
   <div class="box-test">
     <h1 class="tit-box my-2 text-center">Testemunhas</h1><br>
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -96,6 +116,32 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
+  </div>
+
+  <!-- Blog -->
+
+  <div class="container-fluid box-blog">
+    <div class="row">
+      <div class="col-5">
+        <h1 class="tit-ban-3 text-break">Entradas Recentes</h1>
+        <p>Ler um blog sobre perfumes é uma maneira enriquecedora de expandir seu conhecimento olfativo, descobrir lançamentos exclusivos, e receber recomendações personalizadas de especialistas. Pode economizar tempo e dinheiro ao evitar compras impulsivas e ao mesmo tempo aprender dicas valiosas sobre aplicação e conservação de fragrâncias, tornando assim sua jornada no mundo dos perfumes ainda mais prazerosa e informada.</p>
+        <button id="bt-gr" >Saber mais</button>
+      </div>
+      <div class="col-7">
+        {% for id, post in fontes[1].items() %}
+        <div class="row">
+          <div class="col-6">
+            <img src="{{ post['imagem'] }}" alt="">
+          </div>
+          <div class="col-6">
+            <h6>{{ post['data'] }}</h6>
+            <h4>{{ post['titulo'] }}</h4>
+            <p>{{ post['resumo'] }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
   

@@ -1,5 +1,6 @@
 @import "styles.css";
 
+/* Banner */
 #banner-1 {
     background-color: var(--secundario-cranberry);
     padding: 5rem;
@@ -68,10 +69,42 @@
     }
 }
 
+/* Card */
+.card-body h4 {
+    color: var(--primario-flush);
+    font-family: var(--fonte-titulo);
+}
+
+.card-body p {
+    font-family: var(--fonte-paragrafo);
+}
+
+.tit-box-2 {
+    font-size: 4rem;
+    color: var(--vinho-escuro);
+    font-family: var(--fonte-titulo);
+    align-items: center;
+    margin: 0 4vw;
+    background-color: var(--branco-fundo);
+}
+
+.card img {
+    transition: transform .2s;
+}
+
+.card img:hover {
+  transform: scale(1.05)
+}
+
+#card-text {
+    background-color: var(--gold-claro);
+}
+
 /* Carrousel */
 
 .box-test {
     background-color: var(--branco-pampa);
+    padding: 2vw;
 }
 
 .prof-img {
@@ -114,4 +147,18 @@
 
 #card-test a:hover {
     color: var(--branco-pampa);
+}
+
+/* Blog */
+
+.tit-ban-3 {
+    font-size: 475%;
+    color: var(--primario-flush);
+    font-family: var(--fonte-titulo);
+    align-items: center;
+}
+
+.box-blog {
+    background-color: var(--branco-fundo);
+    padding: 2vw;
 }
