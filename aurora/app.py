@@ -17,7 +17,7 @@ def about():
 
 @app.route("/blog")
 def blog():
-    return render_template("blog.html")
+    return render_template("blog.html", fontes = varios)
 
 @app.route("/contato", methods=['POST','GET'])
 def contact():

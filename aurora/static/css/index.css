@@ -162,3 +162,34 @@
     background-color: var(--branco-fundo);
     padding: 2vw;
 }
+
+.post-data {
+    color: var(--primario-flush);
+    font-family: var(--fonte-titulo);
+}
+
+#card-post {
+    background-color: var(--branco-pampa);
+}
+
+.card-text-p {
+    font-family: var(--fonte-paragrafo);
+}
+
+.card-text-p2 {
+    font-family: var(--fonte-paragrafo);
+    font-size: larger;
+}
+
+#cont-post {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#link-post{
+    background-color: var(--branco-fundo);
+    display: flex;
+    align-items: center;
+}

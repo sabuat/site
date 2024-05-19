@@ -17,6 +17,7 @@ Blog = db.get_worksheet(2)
 prod_mais_vendidos = Top4.get_all_records()
 post_blog = Blog.get_all_records()
 
+# Diccionario dos Produtos mais vendidos
 vac = {}
 
 i = 1
@@ -28,6 +29,7 @@ while i < len(prod_mais_vendidos):
     
 vacuo = vac
 
+# Diccionario dos ultimos post
 vac2 = {}
 
 i = 1

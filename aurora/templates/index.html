@@ -123,21 +123,22 @@
 
   <div class="container-fluid box-blog">
     <div class="row">
-      <div class="col-5">
-        <h1 class="tit-ban-3 text-break">Entradas Recentes</h1>
-        <p>Ler um blog sobre perfumes é uma maneira enriquecedora de expandir seu conhecimento olfativo, descobrir lançamentos exclusivos, e receber recomendações personalizadas de especialistas. Pode economizar tempo e dinheiro ao evitar compras impulsivas e ao mesmo tempo aprender dicas valiosas sobre aplicação e conservação de fragrâncias, tornando assim sua jornada no mundo dos perfumes ainda mais prazerosa e informada.</p>
-        <button id="bt-gr" >Saber mais</button>
+      <div class="col-1"></div>
+      <div class="col-4">
+        <h1 class="tit-ban-3 text-break pe-4">Entradas Recentes</h1>
+        <p class="card-text-p2">Ler um blog sobre perfumes é uma maneira enriquecedora de expandir seu conhecimento olfativo, descobrir lançamentos exclusivos, e receber recomendações personalizadas de especialistas. Pode economizar tempo e dinheiro ao evitar compras impulsivas e ao mesmo tempo aprender dicas valiosas sobre aplicação e conservação de fragrâncias, tornando assim sua jornada no mundo dos perfumes ainda mais prazerosa e informada.</p>
+        <button id="bt-gr" class="p-2">Saber mais</button>
       </div>
-      <div class="col-7">
+      <div class="col-7 ps-5">
         {% for id, post in fontes[1].items() %}
-        <div class="row">
-          <div class="col-6">
-            <img src="{{ post['imagem'] }}" alt="">
+        <div class="row my-5">
+          <div class="col-4">
+            <img class="w-100 shadow" src="{{ post['imagem'] }}" alt="">
           </div>
-          <div class="col-6">
-            <h6>{{ post['data'] }}</h6>
+          <div id="card-post" class="col-7">
+            <h5 class="post-data mt-2">{{ post['data'] }}</h5>
             <h4>{{ post['titulo'] }}</h4>
-            <p>{{ post['resumo'] }}</p>
+            <p class="card-text-p">{{ post['resumo'] }}</p>
           </div>
         </div>
         {% endfor %}
@@ -145,6 +146,11 @@
     </div>
   </div>
   
+  <!-- Contacto 2 -->
+  <div class="container-fluid">
+    <div class="row">
 
+    </div>
+  </div>
 </div>
 {% endblock %}
