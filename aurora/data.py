@@ -13,13 +13,17 @@ db = gc.open('loja-online')
 Top4 = db.get_worksheet(0)
 Contatos = db.get_worksheet(1)
 Blog = db.get_worksheet(2)
+Post = db.get_worksheet(3)
+Produtos = db.get_worksheet(4)
 
 prod_mais_vendidos = Top4.get_all_records()
-post_blog = Blog.get_all_records()
+post = Blog.get_all_records()
+post_comp = Post.get_all_records()
+prod_loja = Produtos.get_all_records()
 
 # Diccionario dos Produtos mais vendidos
 vac = {}
-
+ 
 i = 1
 
 while i < len(prod_mais_vendidos):
@@ -34,11 +38,35 @@ vac2 = {}
 
 i = 1
 
-while i < len(post_blog):
-    for item in post_blog:
+while i < len(post):
+    for item in post:
         vac2[i] = item
         i = i +1
     
 blog = vac2
 
-varios = [vacuo, blog]
+# Diccionario de todos os post
+vac3 = {}
+
+i = 1
+
+while i < len(post_comp):
+    for item in post_comp:
+        vac3[i] = item
+        i = i +1
+    
+post = vac3
+
+# Diccionario de todos os produtos
+vac4 = {}
+
+i = 1
+
+while i < len(prod_loja):
+    for item in prod_loja:
+        vac4[i] = item
+        i = i +1
+    
+prods = vac4
+
+varios = [vacuo, blog, post, prods]

@@ -2,6 +2,28 @@
 
 {% block component %}
 
-<h1>Store</h1>
+<div class="parallax">
+    <div class="container-fluid text-center mt-5 pt-5">
+        <h1 class="tit-box-2 mt-5 mb-5 text-center">Nossos Produtos</h1><br>
+        {% for id, produto in fontes[3].items() %}
+            <div class="col d-inline-flex mt-3">
+                <div class="card my-3 mx-3" style="width: 22vw;">
+                <div>
+                    <img src="{{ produto['imagem'] }}" class="col-3 my-2 w-75" style="max-height: 20rem; ">
+                </div>
+                <div id="card-text" class="card-body" style="height: 30vw; ">
+                    <h4 class="card-title mb-2">{{ produto['nome'] }}</h4>
+                    <h2 class="card-title mb-2">id {{ produto['codigo'] }}</h2>
+                    <p class="card-text pt-2" style="height: 12vw; ">{{ produto['descricao'] }}</p>
+                    <h2 class="card-title pb-3">{{ produto['preco'] }}</h2>
+                    <a id="bt-gr" href="" class="btn ">Saiba mais</a>
+                </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
 
 {% endblock %}

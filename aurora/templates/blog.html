@@ -5,7 +5,7 @@
 <div class="parallax">
     <div id="cont-post" class="container-fluid">
         <h1 class="tit-box-2 my-2 text-center">Nosso Blog</h1><br>
-        {% for id, post in fontes[1].items() %}
+        {% for id, post in fontes[2].items() %}
             <div class="row ms-5 m-2 p-4">
                 <div class="col-3">
                     <img class="w-100 shadow" src="{{ post['imagem'] }}" alt="">
@@ -16,7 +16,7 @@
                     <p class="card-text-p">{{ post['resumo'] }}</p>
                 </div>
                 <div id="link-post" class="col-2">
-                    <a id="bt-gr" href="" class="btn ">Ler agora</a>
+                    <a id="bt-gr" method="POST" href="{{ url_for ('post', id=id)}}" class="btn ">Ler agora</a>
                 </div>
             </div>
         {% endfor %}
