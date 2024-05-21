@@ -12,37 +12,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light">
-            <div class="container col-6 col-lg-4 justify-content-start">   
-                <a class="navbar-brand" href="{{ url_for ('home')}}" > <img src="../static/images/logo-barra.png"> </a>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div id="nav-bar" class="d-flex align-items-center justify-content-between">
+                <div class=" col-6 col-md-4">
+                    <a class="navbar-brand " href="{{ url_for ('home')}}" > <img src="../static/images/logo-barra.png"> </a>
+                </div>
+                <!-- Links -->
+                <div class="navbar navbar-expand-lg d-none d-lg-block col-4" id="link-bar">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/loja">Loja</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Icone do carrinho -->
+                <div class="d-flex d-none d-lg-block col-4">
+                    <a class="d-flex flex-row justify-content-end">
+                        <img id="cart" src="../static/images/cart.png" alt="">
+                    </a>
+                </div> 
+                <!-- Botao do menu-->
+              <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined fs-1">
+                    menu
+                    </span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand " href="{{ url_for ('home')}}" > <img src="../static/images/logo-barra.png"> </a>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/loja">Loja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato">Contato</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="collapse navbar-collapse col-4 justify-content-around" id="link-bar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/loja">Loja</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
-            <a class="container col-6 col-lg-4 justify-content-end">
-                <img id="cart" src="../static/images/cart.png" alt="">
-            </a>       
-        </nav>
+          </nav>
     </header>
     <main>
         <div class="mt-5">
@@ -75,12 +113,12 @@
                 </div>
                 <!-- Logotipo-->
                 <div class="col-md-4">
-                    <div class="row pt-5">
+                    <div class="d-none d-md-block row pt-5">
                         <a href="{{ url_for ('home')}}"><img class="logo-footer img-fluid" src="../static/images/logo-aurora-dorado.svg" alt="logo"></a>
                     </div>
                 </div>
                 <!-- Area de contato-->
-                <div class="pt-5 col-md-4">
+                <div class="d-none d-md-block pt-5 col-md-4">
                     <div class=" pt-2 px-5">auroraperfumes@gmail.com</div>
                     <div class=" pt-2 px-5">(+55)11 98765 4321</div>
                 </div>

@@ -5,7 +5,7 @@ from pathlib import Path
 
 # Configuração do caminho para o arquivo Json do google spreadsheets
 # Está sendo usada a biblioteca pathlib para permitir compatibilidade em diversos SO
-file_path = Path('../') / 'site-aurora.json'
+# file_path = Path('../') / 'site-aurora.json'
 
 gc = gspread.service_account("site-aurora.json")
 db = gc.open('loja-online')

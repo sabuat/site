@@ -37,7 +37,7 @@
     margin-right: .5rem;
 }
 
-#nav-bar li{
+#nav-bar li a{
     font-family: var(--fonte-titulo);
     font-weight: 600;
     color: var(--vinho-escuro);

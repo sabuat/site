@@ -8,7 +8,7 @@
 }
 
 .tit-ban-1 {
-    font-size: 475%;
+    font-size: 400%;
     color: var(--branco-pampa);
     font-family: var(--fonte-titulo);
     align-items: center;
@@ -50,26 +50,73 @@
     align-items: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 567px){
     #banner-1 {
-        margin-top: 7rem;
-        padding: 0;
-        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        padding: 50px 0px;
         font-size: 75%;
     }
 
-    #img-1 img{
+    #img-1{
+        width: 100%;
+    }
+
+    #img-2 {
+        width: 100%;
+    }
+
+    .p-ban-1 {
+        padding: 0;
+    }
+
+    #container-imagens {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 570px){
+    #container-imagens {
+        display: flex;
+    }
+
+    #img-1{
         width: 95%;
     }
 
     #img-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    
+    #img-1 {
+        width: 75%;
+    }
+    
+    #img-2 {
+        width: 75%;
     }
 }
 
 /* Card */
+#container-cards {
+    display: inline-flex;
+}
+
+.card {
+    width: 20vw;
+}
+
+.card-body {
+    height: 23vw;
+}
+
 .card-body h4 {
     color: var(--primario-flush);
     font-family: var(--fonte-titulo);
@@ -88,6 +135,10 @@
     background-color: var(--branco-fundo);
 }
 
+#card-block {
+    width: 20%;
+}
+
 .card img {
     transition: transform .2s;
 }
@@ -96,8 +147,45 @@
   transform: scale(1.05)
 }
 
+.card-text {
+    height: 15vw;
+}
+
 #card-text {
     background-color: var(--gold-claro);
+}
+
+@media screen and (max-width: 576px) {
+   #container-cards {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .card {
+    width: 90vw;
+   }
+
+   .card-body {
+    height: 50vw;
+   }
+
+   .card-text {
+    height: 24vw;
+   }
+}
+
+@media screen and (min-width: 570px) and (max-width: 1000px){
+       .card {
+        width: 43vw;
+       }
+    
+       .card-body {
+        height: 45vw;
+       }
+    
+       .card-text {
+        height: 24vw;
+       }
 }
 
 /* Carrousel */
@@ -147,6 +235,23 @@
 
 #card-test a:hover {
     color: var(--branco-pampa);
+}
+
+@media screen  and (max-width: 576px){
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .tit-ban-2 {
+        font-size: 2rem;
+        color: var(--branco-pampa);
+        font-family: var(--fonte-titulo);
+    }
+
+    .img-tit {
+        margin: auto;
+    }
 }
 
 /* Blog */
