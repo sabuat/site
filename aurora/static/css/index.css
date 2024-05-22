@@ -59,7 +59,7 @@
         font-size: 75%;
     }
 
-    #img-1{
+    #img-1 {
         width: 100%;
     }
 
@@ -83,7 +83,7 @@
         display: flex;
     }
 
-    #img-1{
+    #img-1 {
         width: 95%;
     }
 
@@ -117,7 +117,7 @@
     height: 23vw;
 }
 
-.card-body h4 {
+.card-body h4, h2 {
     color: var(--primario-flush);
     font-family: var(--fonte-titulo);
 }
@@ -297,4 +297,56 @@
     background-color: var(--branco-fundo);
     display: flex;
     align-items: center;
+}
+
+#box-title {
+    padding: 5vw 5vw 1vw 5vw;
+    background-color: var(--branco-pampa);
+    display: flex;
+    align-content: center;
+}
+
+#tit-box-3 {
+    margin-left: 1vw;
+    font-size: 4rem;
+    color: var(--primario-flush);
+    font-family: var(--fonte-titulo);
+}
+
+.fundo-post{
+    background-color: var(--branco-fundo);
+}
+
+.link-p {
+    color: var(--primario-flush);
+    text-decoration: none;
+}
+
+.link-p:hover {
+    color: var(--secundario-cranberry);
+}
+
+/* Contacto 2 */
+
+#contact2 {
+    background-image: url("../images/fundo-contatos.jpg");
+    background-size: cover;
+}
+
+.cont-box {
+    display: inline-block;
+    margin-top: 3vw;
+    padding: 5vw;
+    background-color: var(--branco-pampa);
+}
+
+#contact2 button {
+    background-color: var(--primario-flush);
+    color: var(--branco-pampa);
+    border-radius: 0;
+}
+
+#contact2 h2 {
+    color: var(--primario-flush);
+    font-family: var(--fonte-titulo);
 }
