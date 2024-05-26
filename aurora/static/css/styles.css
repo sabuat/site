@@ -49,6 +49,13 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 567px){
+    .nav-item > a > img {
+        width: 100%;
+    }
+}
+
+
 #footer {
     background-color: var(--secundario-cranberry);
     color: var(--branco-pampa);
