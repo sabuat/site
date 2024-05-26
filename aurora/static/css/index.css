@@ -386,6 +386,17 @@
     font-family: var(--fonte-titulo);
 }
 
+.post-data-2 {
+    color: var(--vinho-escuro);
+    font-family: var(--fonte-titulo);
+    text-decoration: none;
+}
+
+.post-data-2:hover {
+    color: var(--primario-flush);
+    font-family: var(--fonte-titulo);
+}
+
 #card-post {
     background-color: var(--branco-pampa);
 }

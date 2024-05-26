@@ -16,7 +16,7 @@
               <img class="img-2 img-fluid" src="https://p0.pikist.com/photos/96/901/still-life-roses-perfume-perfume-bottles-fragrance-rose-petals.jpg" alt="">
             </div>
             <div class="col"><p class="pt-4 p-ban-1">Algumas pessoas compram uma fragrância pela propaganda que foi feita dela, outras pelo belo frasco do produto e ainda outras escolhem a fragrância.</p></div>
-            <div class="col-10 col-sm-11 col-lg-12"><button id="bt-gr">CONSULTE MAIS INFORMAÇÕES</button>
+            <div class="col-10 col-sm-11 col-lg-12"><a href="/loja" class="btn" id="bt-gr">CONSULTE MAIS INFORMAÇÕES</a>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
           <div id="card-text" class="card-body">
             <h4 class="card-title mb-2">{{ produto['nome'] }}</h4>
             <p class="card-text pt-2">{{ produto['descricao'] }}</p>
-            <a id="bt-gr" href="" class="btn">Saiba mais</a>
+            <a id="bt-gr" href="/loja" class="btn">Saiba mais</a>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
         <div class="col-lg-4 col-md-10 d-none d-md-block">
           <h1 class="tit-ban-3 text-break pe-4">Entradas Recentes</h1>
           <p class="card-text-p2">Ler um blog sobre perfumes é uma maneira enriquecedora de expandir seu conhecimento olfativo, descobrir lançamentos exclusivos, e receber recomendações personalizadas de especialistas. Pode economizar tempo e dinheiro ao evitar compras impulsivas e ao mesmo tempo aprender dicas valiosas sobre aplicação e conservação de fragrâncias, tornando assim sua jornada no mundo dos perfumes ainda mais prazerosa e informada.</p>
-          <button id="bt-gr" class="p-2">Saber mais</button>
+          <a id="bt-gr" href="/blog" class="btn p-2">Saber mais</a>
         </div>
         <div class="col-12 col-md-12 col-lg-7 px-5">
           {% for id, post in fontes[1].items() %}
@@ -128,7 +128,7 @@
             </div>
             <div id="card-post" class="col-12 col-md-6 col-lg-7 p-2">
               <h5 class="post-data mt-2">{{ post['data'] }}</h5>
-              <h4>{{ post['titulo'] }}</h4>
+              <h4><a class="post-data-2" href="/post/{{ id}}">{{ post['titulo'] }}</a></h4>
               <p class="card-text-p">{{ post['resumo'] }}</p>
             </div>
           </div>
