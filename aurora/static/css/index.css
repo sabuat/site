@@ -3,23 +3,25 @@
 /* Banner */
 #banner-1 {
     background-color: var(--secundario-cranberry);
-    padding: 5rem;
     margin-bottom: 2rem;
+    margin-top: 2.5rem;
+    padding: 6rem 4rem;
 }
 
 .tit-ban-1 {
-    font-size: 400%;
+    font-size: 4.5vw;
     color: var(--branco-pampa);
     font-family: var(--fonte-titulo);
     align-items: center;
+    width: 80%;
 }
 
 .p-ban-1 {
     padding: auto;
     color: var(--branco-pampa);
     font-family: var(--fonte-paragrafo);
-    font-size: 1.5rem;
-    padding: 1.5rem;   
+    font-size: 1rem;
+      
 }
 
 #bt-gr {
@@ -27,8 +29,8 @@
     color: var(--branco-pampa);
     font-family: var(--fonte-titulo);
     text-transform: uppercase;
-    width: auto;
-    font-size: 1.2rem;
+    width: 90%;
+    font-size: 1rem;
     padding: .125rem, .5rem;
     border: 1px solid var(--branco-pampa);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -54,54 +56,59 @@
     #banner-1 {
         display: flex;
         flex-direction: column;
-        margin-top: 80px;
-        padding: 50px 0px;
+        margin-top: 70px;
+        padding: 50px 30px;
         font-size: 75%;
     }
 
-    #img-1 {
-        width: 100%;
-    }
-
     #img-2 {
         width: 100%;
     }
 
-    .p-ban-1 {
-        padding: 0;
+    .tit-ban-1 {
+        font-size: 8vw;
+        padding-bottom: 30px;
     }
 
-    #container-imagens {
-        display: flex;
-        flex-direction: column;
+    #container-imagen-2 {
+        gap: 15px;
+    }
+
+    #bt-gr {
+        padding: 7px;
+    }
+
+    
+}
+
+@media screen and (min-width: 570px) and (max-width: 992px){
+
+    .tit-ban-1 {
+        width: 100%;
+        font-size: 3rem;
+        padding: 1rem 0rem;
+    }
+
+    #container-imagen {
         gap: 30px;
-    }
-}
-
-@media screen and (min-width: 570px){
-    #container-imagens {
-        display: flex;
+        
     }
 
-    #img-1 {
-        width: 95%;
-    }
-
-    #img-2 {
-        width: 100%;
+    #bt-gr {
+        font-size: .8rem;
+        padding: 0.4rem;
     }
 
 }
 
-@media screen and (min-width: 1200px){
-    
-    #img-1 {
-        width: 75%;
+@media screen and (min-width: 992px){
+
+    #container-imagen {
+        gap: 40px;
     }
+
+
     
-    #img-2 {
-        width: 75%;
-    }
 }
 
 /* Card */
@@ -113,16 +120,21 @@
     width: 20vw;
 }
 
-.card-body {
-    height: 23vw;
-}
-
 .card-body h4, h2 {
     color: var(--primario-flush);
     font-family: var(--fonte-titulo);
 }
 
 .card-body p {
+    font-family: var(--fonte-paragrafo);
+}
+
+.card-body-loja h4, h2 {
+    color: var(--primario-flush);
+    font-family: var(--fonte-titulo);
+}
+
+.card-body-loja p {
     font-family: var(--fonte-paragrafo);
 }
 
@@ -147,22 +159,25 @@
   transform: scale(1.05)
 }
 
-.card-text {
-    height: 15vw;
-}
-
 #card-text {
     background-color: var(--gold-claro);
+}
+
+#card-text p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    
 }
 
 @media screen and (max-width: 576px) {
    #container-cards {
     display: flex;
     flex-direction: column;
+    align-items: center;
    }
 
    .card {
-    width: 90vw;
+    width: 80vw;
    }
 
    .card-body {
@@ -172,19 +187,23 @@
    .card-text {
     height: 24vw;
    }
+
+   .tit-box-2 {
+    font-size: 2rem;
+   }
 }
 
-@media screen and (min-width: 570px) and (max-width: 1000px){
+@media screen and (min-width: 576px) and (max-width: 1000px){
        .card {
         width: 43vw;
        }
     
        .card-body {
-        height: 45vw;
+        height: 50vw;
        }
     
        .card-text {
-        height: 24vw;
+        height: 30vw;
        }
 }
 
@@ -243,6 +262,11 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .tit-box {
+        font-size: 2rem;
+    }
+
     .tit-ban-2 {
         font-size: 2rem;
         color: var(--branco-pampa);
@@ -251,6 +275,15 @@
 
     .img-tit {
         margin: auto;
+    }
+
+    .p-ban-2 {
+        font-size: 3vw;
+    }
+
+    #container-float {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
@@ -287,9 +320,7 @@
 }
 
 #cont-post {
-    margin-top: 10vw;
-    display: flex;
-    flex-direction: column;
+    margin-top: 5vw;
     justify-items: center;
 }
 
@@ -326,6 +357,17 @@
     color: var(--secundario-cranberry);
 }
 
+@media screen and (max-width: 567px){
+
+    #cont-post {
+        margin-top: 80px;
+    }
+
+    #link-post {
+        justify-content: center;
+    }
+}
+
 /* Contacto 2 */
 
 #contact2 {
@@ -335,7 +377,7 @@
 
 .cont-box {
     display: inline-block;
-    margin-top: 3vw;
+    margin: 3vw;
     padding: 5vw;
     background-color: var(--branco-pampa);
 }

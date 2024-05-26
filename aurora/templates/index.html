@@ -3,36 +3,28 @@
 {% block component %}
 <div class="parallax">
   <!-- Banner Principal -->
-  <div  id="banner-1" class="d-block d-md-flex gap-4 px-3 align-items-center justify-content-center">
+  <div id="banner-1" class="d-block d-lg-flex align-items-center justify-content-center">
     <div class="col-12 col-md-6 col-lg-4">
-      <h1 class="tit-ban-1">Fragrâncias para momentos especiais</h1>
+        <h1 class="tit-ban-1 animate__animated animate__fadeInLeft">Fragrâncias para momentos especiais</h1>
     </div>
-      <div id="container-imagens" class="col-12 col-md-6 col-lg-8">
-        <div id="container-img-2" class="col-12 col-sm-6 col-lg-6">
-          <img id="img-1" class="invert"
-              src="https://p0.pikist.com/photos/834/937/bottle-colors-flowers-glass-items-indoors-perfume-petals-roses-communication-text.jpg"
-              alt="">
+    <div id="container-imagen" class="d-flex col-12 col-md-12 col-lg-5 animate__animated animate__fadeInRight">
+        <div class="d-flex col-sm-6 col-lg-6 d-none d-sm-block">
+          <img class="img-1 img-fluid" src="https://p0.pikist.com/photos/834/937/bottle-colors-flowers-glass-items-indoors-perfume-petals-roses-communication-text.jpg" alt="">
         </div>
-        <div class="d-flex flex-column gap-4 col-12 col-sm-6 col-lg-6">
-          <div>
-            <img id="img-2" class=" invert"
-                  src="https://p0.pikist.com/photos/96/901/still-life-roses-perfume-perfume-bottles-fragrance-rose-petals.jpg"
-                  alt="">
-          </div>
-          <div>
-            <p class="p-ban-1">Algumas pessoas compram uma fragrância pela propaganda que foi feita dela, outras pelo belo
-              frasco do produto e ainda outras escolhem a fragrância.</p>
-          </div>
-          <div>
-            <button type="button" id="bt-gr" onclick="location.href='/loja';">CONSULTE MAIS INFORMAÇÕES</button>
-          </div>
+        <div id="container-imagen-2" class="d-flex flex-column col-12 col-sm-6 col-lg-6">
+            <div class="col">
+              <img class="img-2 img-fluid" src="https://p0.pikist.com/photos/96/901/still-life-roses-perfume-perfume-bottles-fragrance-rose-petals.jpg" alt="">
+            </div>
+            <div class="col"><p class="pt-4 p-ban-1">Algumas pessoas compram uma fragrância pela propaganda que foi feita dela, outras pelo belo frasco do produto e ainda outras escolhem a fragrância.</p></div>
+            <div class="col-8 col-sm-11 col-lg-12"><button id="bt-gr">CONSULTE MAIS INFORMAÇÕES</button>
+            </div>
         </div>
-      </div>
-  </div>
+    </div>
+</div>
 
   <!-- Melores Vendidos -->
 
-  <div class="text-center mb-2">
+  <div class="container-fluid text-center mb-2">
     <h1 class="tit-box-2 my-2 text-center">Mais Vendidos</h1><br>
     {% for id, produto in fontes[0].items() %}
       <div id="container-cards" class="col  mt-3">
@@ -52,104 +44,104 @@
 
   <!-- Testimonios -->
 
-  <div class="box-test container-fluid">
-    <h1 class="tit-box my-2 text-center">Testemunhas</h1><br>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <div id='card-test' class="d-flex position-relative">
-            <div class="conteudo row">
-              <div class="img-tit col-4  pt-3 text-center">
-                <img src="../static/images/michi.png"
-                  class="prof-img img-thumbnail w-75" alt="...">
+  <div id="container-float">
+    <div class="box-test container-fluid">
+      <h1 class="tit-box my-2 text-center">Testemunhas</h1><br>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div id='card-test' class="d-flex position-relative">
+              <div class="conteudo row">
+                <div class="img-tit col-4  pt-3 text-center">
+                  <img src="../static/images/michi.png"
+                    class="prof-img img-thumbnail w-75" alt="...">
+                </div>
+                <div class="col-12 col-lg-6">
+                  <h5 class="m-2 tit-ban-2">Excelente serviço</h5>
+                  <div>
+                    <p class="p-ban-2">"Comprar na Aurora Perfumaria foi uma experiência maravilhosa! A seleção de perfumes é incrível e as descrições dos produtos me ajudaram a escolher exatamente o que eu queria. Fiquei impressionada com a qualidade dos perfumes e o quão bem embalados eles chegaram. Além disso, a entrega foi super rápida, recebi meu pedido em apenas dois dias. Com certeza voltarei a comprar aqui e recomendo para todos os meus amigos!"</p>
+                    <a href="#" class="link">@susej.urbina</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-12 col-lg-6">
-                <h5 class="m-2 tit-ban-2">Excelente serviço</h5>
-                <div>
-                  <p class="p-ban-2">"Comprar na Aurora Perfumaria foi uma experiência maravilhosa! A seleção de perfumes é incrível e as descrições dos produtos me ajudaram a escolher exatamente o que eu queria. Fiquei impressionada com a qualidade dos perfumes e o quão bem embalados eles chegaram. Além disso, a entrega foi super rápida, recebi meu pedido em apenas dois dias. Com certeza voltarei a comprar aqui e recomendo para todos os meus amigos!"</p>
-                  <a href="#" class="link">@susej.urbina</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div id='card-test' class="d-flex position-relative">
+              <div class="conteudo row">
+                <div class="img-tit col-4 pt-3 text-center">
+                  <img src="../static/images/ada.png"
+                    class="prof-img img-thumbnail w-75" alt="...">
+                </div>
+                <div class="col-12 col-lg-6">
+                  <h5 class="m-2 tit-ban-2">Experiencia maravilhosa</h5>
+                  <div>
+                    <p class="p-ban-2">"Eu amo perfumes e sempre estou à procura de novas fragrâncias. Na Aurora, encontrei marcas exclusivas e perfumes que não encontro em lugar nenhum. A qualidade dos produtos é excelente e o site é muito fácil de navegar. Minha compra chegou rapidamente e com tudo muito bem embalado. Estou muito feliz com minha compra e com o serviço oferecido. Parabéns pelo ótimo trabalho!"</p>
+                    <a href="#" class="link">@adaluz.lara</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div id='card-test' class="d-flex position-relative">
+              <div class="conteudo row">
+                <div class="img-tit col-4 pt-3 text-center">
+                  <img src="../static/images/astrid.png"
+                    class="prof-img img-thumbnail w-75" alt="...">
+                </div>
+                <div class="col-12 col-lg-6">
+                  <h5 class="m-2 tit-ban-2">Vale a pena voltar</h5>
+                  <div>
+                    <p class="p-ban-2">"Fiquei muito satisfeita com a minha experiência de compra na Aurora. O site oferece uma variedade enorme de perfumes e as informações detalhadas sobre cada produto facilitaram muito a minha escolha. Os perfumes que comprei chegaram em perfeito estado e a entrega foi muito rápida. A qualidade dos produtos é excepcional. Certamente farei mais compras no futuro e recomendo para todos que procuram perfumes de alta qualidade com um ótimo serviço."</p>
+                    <a href="#" class="link">@astrid_urbina_villarroel</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <div id='card-test' class="d-flex position-relative">
-            <div class="conteudo row">
-              <div class="img-tit col-4 pt-3 text-center">
-                <img src="../static/images/ada.png"
-                  class="prof-img img-thumbnail w-75" alt="...">
-              </div>
-              <div class="col-12 col-lg-6">
-                <h5 class="m-2 tit-ban-2">Experiencia maravilhosa</h5>
-                <div>
-                  <p class="p-ban-2">"Eu amo perfumes e sempre estou à procura de novas fragrâncias. Na Aurora, encontrei marcas exclusivas e perfumes que não encontro em lugar nenhum. A qualidade dos produtos é excelente e o site é muito fácil de navegar. Minha compra chegou rapidamente e com tudo muito bem embalado. Estou muito feliz com minha compra e com o serviço oferecido. Parabéns pelo ótimo trabalho!"</p>
-                  <a href="#" class="link">@adaluz.lara</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <div id='card-test' class="d-flex position-relative">
-            <div class="conteudo row">
-              <div class="img-tit col-4 pt-3 text-center">
-                <img src="../static/images/astrid.png"
-                  class="prof-img img-thumbnail w-75" alt="...">
-              </div>
-              <div class="col-12 col-lg-6">
-                <h5 class="m-2 tit-ban-2">Vale a pena voltar</h5>
-                <div>
-                  <p class="p-ban-2">"Fiquei muito satisfeita com a minha experiência de compra na Aurora. O site oferece uma variedade enorme de perfumes e as informações detalhadas sobre cada produto facilitaram muito a minha escolha. Os perfumes que comprei chegaram em perfeito estado e a entrega foi muito rápida. A qualidade dos produtos é excepcional. Certamente farei mais compras no futuro e recomendo para todos que procuram perfumes de alta qualidade com um ótimo serviço."</p>
-                  <a href="#" class="link">@astrid_urbina_villarroel</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-  </div>
-
-  <!-- Blog -->
-
-  <div class="container-fluid box-blog">
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-4">
-        <h1 class="tit-ban-3 text-break pe-4">Entradas Recentes</h1>
-        <p class="card-text-p2">Ler um blog sobre perfumes é uma maneira enriquecedora de expandir seu conhecimento olfativo, descobrir lançamentos exclusivos, e receber recomendações personalizadas de especialistas. Pode economizar tempo e dinheiro ao evitar compras impulsivas e ao mesmo tempo aprender dicas valiosas sobre aplicação e conservação de fragrâncias, tornando assim sua jornada no mundo dos perfumes ainda mais prazerosa e informada.</p>
-        <button id="bt-gr" class="p-2">Saber mais</button>
-      </div>
-      <div class="col-7 ps-5">
-        {% for id, post in fontes[1].items() %}
-        <div class="row my-5">
-          <div class="col-4">
-            <img class="w-100 shadow" src="{{ post['imagem'] }}" alt="">
-          </div>
-          <div id="card-post" class="col-7">
-            <h5 class="post-data mt-2">{{ post['data'] }}</h5>
-            <h4>{{ post['titulo'] }}</h4>
-            <p class="card-text-p">{{ post['resumo'] }}</p>
-          </div>
+    <!-- Blog -->
+    <div id="container-blog" class="container-fluid box-blog">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-lg-4 col-md-10 d-none d-md-block">
+          <h1 class="tit-ban-3 text-break pe-4">Entradas Recentes</h1>
+          <p class="card-text-p2">Ler um blog sobre perfumes é uma maneira enriquecedora de expandir seu conhecimento olfativo, descobrir lançamentos exclusivos, e receber recomendações personalizadas de especialistas. Pode economizar tempo e dinheiro ao evitar compras impulsivas e ao mesmo tempo aprender dicas valiosas sobre aplicação e conservação de fragrâncias, tornando assim sua jornada no mundo dos perfumes ainda mais prazerosa e informada.</p>
+          <button id="bt-gr" class="p-2">Saber mais</button>
         </div>
-        {% endfor %}
+        <div class="col-12 col-md-12 col-lg-7 px-5">
+          {% for id, post in fontes[1].items() %}
+          <div class="d-block d-md-flex my-5">
+            <div class="col-12 col-md-6 col-lg-5">
+              <img class="w-100 shadow" src="{{ post['imagem'] }}" alt="">
+            </div>
+            <div id="card-post" class="col-12 col-md-6 col-lg-7 p-2">
+              <h5 class="post-data mt-2">{{ post['data'] }}</h5>
+              <h4>{{ post['titulo'] }}</h4>
+              <p class="card-text-p">{{ post['resumo'] }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
   
   <!-- Contacto 2 -->
-  <div id="contact2" class="container-fluid text-center">
-    <div class="container" style="height: 28vw;">
-      <div class="cont-box col-6">
+  <div id="contact2" class="container-fluid d-none d-md-block  text-center">
+    <div class="container">
+      <div class="cont-box col-md-8 col-lg-6">
         <div class="row">
           <h2 class="card-title mb-2">Receba Ofertas Personalizadas</h2>
         </div>
