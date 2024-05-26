@@ -4,19 +4,19 @@
 <div class="parallax">
   <!-- Banner Principal -->
   <div id="banner-1" class="d-block d-lg-flex align-items-center justify-content-center">
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-8 col-lg-4">
         <h1 class="tit-ban-1 animate__animated animate__fadeInLeft">Fragrâncias para momentos especiais</h1>
     </div>
     <div id="container-imagen" class="d-flex col-12 col-md-12 col-lg-5 animate__animated animate__fadeInRight">
         <div class="d-flex col-sm-6 col-lg-6 d-none d-sm-block">
-          <img class="img-1 img-fluid" src="https://p0.pikist.com/photos/834/937/bottle-colors-flowers-glass-items-indoors-perfume-petals-roses-communication-text.jpg" alt="">
+          <img class="img-1 img-fluid invert" src="https://p0.pikist.com/photos/834/937/bottle-colors-flowers-glass-items-indoors-perfume-petals-roses-communication-text.jpg" alt="">
         </div>
         <div id="container-imagen-2" class="d-flex flex-column col-12 col-sm-6 col-lg-6">
             <div class="col">
               <img class="img-2 img-fluid" src="https://p0.pikist.com/photos/96/901/still-life-roses-perfume-perfume-bottles-fragrance-rose-petals.jpg" alt="">
             </div>
             <div class="col"><p class="pt-4 p-ban-1">Algumas pessoas compram uma fragrância pela propaganda que foi feita dela, outras pelo belo frasco do produto e ainda outras escolhem a fragrância.</p></div>
-            <div class="col-8 col-sm-11 col-lg-12"><button id="bt-gr">CONSULTE MAIS INFORMAÇÕES</button>
+            <div class="col-10 col-sm-11 col-lg-12"><button id="bt-gr">CONSULTE MAIS INFORMAÇÕES</button>
             </div>
         </div>
     </div>
@@ -28,14 +28,14 @@
     <h1 class="tit-box-2 my-2 text-center">Mais Vendidos</h1><br>
     {% for id, produto in fontes[0].items() %}
       <div id="container-cards" class="col  mt-3">
-        <div id="cards" class="card my-3 mx-3">
+        <div class="card my-3 mx-3">
           <div>
             <img src="{{ produto['imagem'] }}" class="col-3 my-2 w-75" style="max-height: 20rem; ">
           </div>
           <div id="card-text" class="card-body">
             <h4 class="card-title mb-2">{{ produto['nome'] }}</h4>
             <p class="card-text pt-2">{{ produto['descricao'] }}</p>
-            <a id="bt-gr" href="" class="btn ">Saiba mais</a>
+            <a id="bt-gr" href="" class="btn">Saiba mais</a>
           </div>
         </div>
       </div>

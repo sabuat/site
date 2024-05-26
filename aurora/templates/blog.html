@@ -6,7 +6,7 @@
     <div id="cont-post" class="container-fluid">
         <h1 class="tit-box-2 my-2 text-center">Nosso Blog</h1><br>
         {% for id, post in fontes[2].items() %}
-            <div id="cont-post-items" class="d-block d-lg-flex gap-2 ms-5 m-2 p-4">
+            <div id="cont-post-items" class="d-block d-lg-flex col-10 col-md-8 col-lg-11 mx-auto py-3 gap-3">
                 <div class="col-12 col-lg-3">
                     <img class="w-100 shadow" src="{{ post['imagem'] }}" alt="">
                 </div>
@@ -15,7 +15,7 @@
                     <h4>{{ post['titulo'] }}</h4>
                     <p class="card-text-p">{{ post['resumo'] }}</p>
                 </div>
-                <div id="link-post" class="col-12 col-lg-2">
+                <div id="link-post" class="col-12 col-lg-2 justify-content-center">
                     <a id="bt-gr" method="POST" href="{{ url_for ('post', id=id)}}" class="btn m-2">Ler agora</a>
                 </div>
             </div>
