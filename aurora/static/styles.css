@@ -1,0 +1,97 @@
+/* General Variables */
+:root {
+    --branco-pampa: rgb(246, 249, 249);
+    --gold: #dbc07c;
+    --primario-flush: #bb1d3e;
+    --secundario-cranberry: #de5774;
+    --vinho-escuro: #342729;
+    --branco-fundo: rgb(246, 249, 249, 0.65);
+
+    --fonte-titulo: "Cormorant SC", serif;
+    --fonte-paragrafo: "Marcellus", sans-serif;
+
+}
+
+
+/* Navigation Bar */
+
+#nav-bar {
+    background-color: var(--branco-pampa);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-brand img {
+    max-width: max-content;
+}
+
+#cart {
+    width: 3rem;
+}
+
+.nav-item a {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+#nav-bar li{
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    color: var(--vinho-escuro);
+    font-size: 1.35rem;
+}
+
+#nav-bar li:hover {
+    color: var(--primario-flush);
+    text-decoration: underline;
+}
+
+#footer {
+    background-color: var(--secundario-cranberry);
+    color: var(--branco-pampa);
+}
+
+#footer-prod {
+    background-color: var(--vinho-escuro);
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.link-bar {
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    color: var(--branco-pampa);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.link-bar:hover {
+    text-decoration: underline;
+    color: var(--gold);
+}
+
+.logo-footer {
+    /* max-width: fit-content; */
+    text-align: center;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+/* Parallax */
+
+.parallax {
+    /* The image used */
+    background-image: url("../static/fundo-aurora-1.jpg");
+
+    width: 100%;
+    
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
